@@ -1,0 +1,42 @@
+data=[
+    {
+        "name":"ronaldo",
+         "followers":200,
+         "place":"portuguese"
+    },
+    {
+        "name":"messi",
+         "followers":400,
+         "place":"Argentina"
+    },
+    {
+        "name":"sachin",
+         "followers":290,
+         "place":"India"
+    },
+    {
+        "name":"Virat Kohli",
+         "followers":1000,
+         "place":"India"
+    },
+    {
+        "name":"Ms Dhoni",
+         "followers":250,
+         "place":"India"
+    },
+    {
+        "name":"Modi",
+         "followers":1200,
+         "place":"India"
+    },
+    {
+        "name":"Bolt",
+         "followers":150,
+         "place":"Jamiacca"
+    },
+    {
+        "name":"Avengers",
+         "followers":1500,
+         "place":"US"
+    }
+]
