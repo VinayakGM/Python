@@ -28,10 +28,10 @@ while len(guessed_states)<50:
     guess_answer=guess_answer.capitalize()
 
     if guess_answer=="Exit":
-        missing_states=[]
-        for state in all_states:
-            if state not in guessed_states:
-                missing_states.append(state)
+        missing_states=[state for state in all_states if state not in guessed_states]
+        # for state in all_states:
+        #     if state not in guessed_states:
+        #         missing_states.append(state)
         newdata=pandas.DataFrame(missing_states)
         newdata.to_csv("state_to_learn.csv")
         break
@@ -62,3 +62,28 @@ while len(guessed_states)<50:
 
 
 screen.exitonclick()
+
+# import pandas
+# # reading the excel file or csv file
+# data=pandas.read_csv("sample.csv")
+# # exttacted result or manual input for case name
+# case_name=input("Enter case name : ")
+# case_list=data.columns.to_list()
+# print(case_list)
+# # extracted results
+# extracted_data=[]
+# # if case entered is not in sample.csv
+# if case_name not in case_list:
+#     print("No case such found")
+# else:
+#     # extract the documents for documnet
+#     document_list=data[case_name].to_list()
+#     print(document_list)
+#     dict={case_name:document_list}
+#     # appending results to extracted data
+#     extracted_data.append(dict)
+# print(extracted_data)
+
+
+
+
